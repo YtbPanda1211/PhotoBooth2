@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>PHOTO TIME</title>
+    <meta charset="utf-8">
+    <style type='text/css'>
+        div {
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        div {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover,
+        video:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <br />
+        <img src='setting/PHOTOLOGO.png' width='600' height='104'>
+        <br />
+        <br /><br />
+        <br />
+        <img src='Picture/a.jpg' style='max-width:65%;height:auto;'>
+        <br />
+        <br />
+        <video controls loop width="600" height="400">
+        <source src="Picture/videoptb.mp4" type="video/mp4">
+  Trình duyệt của bạn không hỗ trợ thẻ video.
+</video>
+        <br />
+        <br />
+        <br />
+        <a href="Picture/a.jpg" download><img src='setting/IMEGE.png' width='298' height='90'></a>
+        <a href="Picture/videoptb.mp4" download><img src='setting/VIDEO.png' width='298' height='90'></a>
+        <br />
+        <br />
+        <br />
+
+        <span style=" font: bold 1.3em/1em Georgia, serif ; color: red;">
+Ảnh sẽ tự động bị xóa sau khi được lưu trữ trong 3 ngày.
+</span>
+        <br />
+        <br />
+        <span style=" font: bold 1.3em/1em Georgia, serif ; color: red;">
+Tải hình ảnh và video
+</span>
+        <br />
+        <br />
+    </div>
+
+    <iframe id="iframe" width="1" height="1" src="http://photoqr.kr/push_3cut.aspx"></iframe>
+</body>
+
+</html>
